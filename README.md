@@ -42,7 +42,7 @@ El resultado queda en la carpeta `dist/`.
 
 Los datos son dummy y están embebidos en el frontend. Esta versión sirve para revisar interfaz y reglas. La persistencia real/local se incorporará posteriormente siguiendo la arquitectura MGS definida para aplicaciones administrativas.
 
-## GitHub Pages — v0.2.0
+## GitHub Pages — v0.3.0
 
 El proyecto incluye `.github/workflows/deploy-pages.yml` para construir con Vite y publicar `dist/` automáticamente al hacer push a `main`.
 
@@ -51,10 +51,15 @@ El proyecto incluye `.github/workflows/deploy-pages.yml` para construir con Vite
 Si en la pestaña Actions no aparece **Deploy GitHub Pages**, verifica que la carpeta oculta `.github` haya sido subida al repositorio.
 
 
-## v0.2.0 - Comprobante de feriado
+## v0.3.0 - Comprobante de feriado
 
 - Botón **Generar comprobante** en cada período del histórico individual.
 - PDF de una página inspirado en el comprobante entregado por MGS.
 - Completa automáticamente nombre, RUT, fecha de contrato, período, días hábiles, saldo y tipo de feriado.
 - Deja espacios para Firma del Trabajador, Nombre y Firma del Empleador y Autorización Gerencia.
 - Agrega identificador interno y fecha de generación al pie.
+
+
+## v0.3.0 · Ingreso de personal
+
+Se incorpora alta de personal con nombre, RUT, correo, teléfono, área, cargo, fecha de ingreso, tipo de contrato, estado y ajuste inicial de vacaciones. Los nuevos registros se guardan en localStorage del navegador para pruebas de la maqueta.
