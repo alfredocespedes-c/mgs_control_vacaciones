@@ -41,3 +41,11 @@ El resultado queda en la carpeta `dist/`.
 ## Alcance de esta versión
 
 Los datos son dummy y están embebidos en el frontend. Esta versión sirve para revisar interfaz y reglas. La persistencia real/local se incorporará posteriormente siguiendo la arquitectura MGS definida para aplicaciones administrativas.
+
+## GitHub Pages — v0.1.2
+
+El proyecto incluye `.github/workflows/deploy-pages.yml` para construir con Vite y publicar `dist/` automáticamente al hacer push a `main`.
+
+**Configuración inicial obligatoria en GitHub:** `Settings → Pages → Build and deployment → Source → GitHub Actions`.
+
+Si en la pestaña Actions no aparece **Deploy GitHub Pages**, verifica que la carpeta oculta `.github` haya sido subida al repositorio.
